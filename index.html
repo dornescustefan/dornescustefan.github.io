@@ -1,0 +1,471 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stefan Dornescu's webpage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Stefan Dornescu, Stefan Victor Dornescu, Dornescu Victor Stefan,Junior Java Developer">
+  <meta name="author" content="dos" >
+  <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ > 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Lekton:400,700" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  
+<script>
+	$(document).ready(function(){
+	   (function blink() { 
+	  $('.blink_me').fadeOut(500).fadeIn(500, blink); 
+	      })(); 
+
+		}); 
+</script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="" data-toggle="tooltip" data-placement="bottom" title="Home Page">
+    <span style="font-size:20px">></span><span class="blink_me" style="font-size:20px">_</span>
+    </a>
+    </div>
+    <div class="collapse navbar-collapse " id="myNavbar">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="#main-page">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Me
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#work-experience">Work experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#soft-skills">Soft skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </li>        
+	
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="main-page" class="main-page" >
+ <div class="container">
+ 
+	<div id="intro-text" class="animated bounceInRight">
+        Stefan Dornescu<br>
+        Java Developer
+        </div>
+  
+
+ </div>
+
+</div>
+<!--Projects-->
+<div class="container projects" id="projects">
+<h1><i class="fa fa-wrench"></i> Projects</h1><br>
+
+<div class="col-md-4">
+  	<h2>Java Fx application</h2>
+	<button onclick="document.getElementById('id06').style.display='block'" class="w3-btn">
+		<img src="img/Project1.png" alt="project1" class="project-logo">
+	</button>
+</div>
+
+<div class="col-md-4">
+  	<h2>Spring MVC application</h2>
+  	<button onclick="document.getElementById('id07').style.display='block'" class="w3-btn">
+	   <img src="img/Project2.png" alt="project2" class="project-logo">
+  	</button>
+</div>
+
+
+<div class="col-md-4">
+  	<h2>Hibernate application</h2>
+  	<button onclick="document.getElementById('id08').style.display='block'" class="w3-btn">
+	   <img src="img/Project3.png" alt="project3" class="project-logo">
+  	</button>
+</div>
+
+</div>
+
+<div class="divider1"><p id="quote1" class="quotes " >The unexamined life is not worth living. (Socrates)</p></div>
+
+<!--Work experience-->
+<div class="w3-container work-experience" id="work-experience">
+<h1><i class="fa fa-suitcase"></i> Work experience</h1><br>
+<div class="w3-container w3-card-2 ">
+   <div class="w3-container">
+          <div class="w3-container ">
+          <div class="w3-container">
+          <h5 class="w3-text"><b>Jamie Oliver Ltd. / Team assistant</b></h5>
+          <h7><a href="http://www.jamieoliver.com/" target="_blank">http://www.jamieoliver.com/</a></h7>
+          <h6 class="w3-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>October 2010 - December 2017</h6>
+          <p>
+		  <ul style="text-align: left;">
+			<li>This was a live in job in Jamie Oliver’s private homes which required synchronizing
+				different household tasks, maintenance, driving, communication skills and involved
+				organizing and time management abilities</li>
+			<li>During these 7 years I always tried to complete my duties to the highest standards</li>
+			<li>Due to my role I was the first point of contact for different household issues</li>
+			<li>Transmitting the Oliver’s requests and communicating them to different team members</li>
+			<li>My role required me to be trustworthy, reliable and have a ‘can do’ attitude</li> 
+			<li>Doing general maintenance, driving and any other ad-hoc jobs what was required by the family</li> 
+			</ul>
+		  </p>
+		  <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-text"><b>Penguin Random House UK / Junior Web Developer</b></h5>
+          <h7><a href="http://www.penguinrandomhouse.com/" target="_blank">http://www.penguinrandomhouse.com/</a></h7>
+          <h6 class="w3-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2014 - September 2014</h6>
+	         
+	`	<p>
+		<ul style="text-align: left;">
+		<li>Managing and updating existing websites, there was a total of 220 websites</li>
+		<li>Working for different authors I had to solve different type of requests</li>
+		<li>Presenting my work for the team on daily meetings</li>
+		<li>Enjoyed being part of the team and taking on new challenges</li>
+		<li>Dealing with different types of web technologies</li> 
+		<li>Debugging faulty websites</li> 
+		</ul>
+        </p>
+        
+	<hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-text"><b>Thermo Control / Software Engineer for Building Management Systems</b></h5>
+           <h7><a href="http://thermocontrol.ro/home/" target="_blank">http://thermocontrol.ro/home/</a></h7>
+          <h6 class="w3-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2007 - 2010</h6>
+          <p>
+	<ul style="text-align: left;">	
+		<li>Programing mainly TAC microcontrollers for projects with short deadlines</li>
+		<li>Working for international brands (Nokia, Cinema City, Telenor Hungary) I had to deal
+			with different clients from different backgrounds</li>
+		<li>Update/communicate with colleagues from different remote projects</li>
+		<li>Working on complex projects as part of a team I always tried to do my best to fulfil my duties</li>
+		<li>Using state of the art, but also dealing with outdated technologies</li>
+		<li>Solving hardware and software bugs on daily basis</li>
+</p><br>
+        
+	</ul>
+      </div>
+      </div>
+  
+    </div>
+
+</div>
+</div><br>
+<br>
+<div class="divider2"><p class="quotes">It is the mark of an educated mind to be able to entertain a thought without accepting it. (Aristotle)</p></div>
+</div>
+<!--Education-->
+<div class="container skills" id="education">
+<h1><i class="fa fa-graduation-cap"></i> Education</h1><br>
+ 
+       <div class="col-md-6 studies">
+
+      <p><h2><strong><i class="fa fa-calendar"></i> 2016 - Current</strong></h2>
+ <h4><strong>Developers Professional Blended Course</strong></h4>
+      </p>
+      
+      <a href="#demo1" data-toggle="collapse">
+      <img src="img/logo-justIT.png" alt="justIt" class="education-logo">
+    
+    </a>
+    <div id="demo1" class="collapse">
+      <a href="https://www.justit.co.uk/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Just It website"><u>Just IT</u></a> offers the best training programme to support me in refreshing, upgrading and structuring my knowledge and skills required for a carrier in IT. 
+   </div>
+
+    </div>
+      <div class="col-md-6 studies">
+      <p><h2><strong><i class="fa fa-calendar"></i> 2003 - 2008</strong></h2>
+      <h4><strong>Bachelor Degree in Economic Informatics</strong></h4></p>
+      <a href="#demo2" data-toggle="collapse">
+      <img src="img/logo-ubb.png" alt="ubb" class="education-logo">
+      </a>
+     
+     <div id="demo2" class="collapse">
+	<p>
+	This degree is considered comparable to British Bachelor degree by UK NARIC on reference number 2000146461.<br>
+	 The <a href="http://www.ubbcluj.ro/en/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Babeș-Bolyai University website">
+      <u>Babeș-Bolyai University</u></a> is considered as one of the most prestigious in Eastern Europe. In the Best Global Universities 2015 ranking the university was 		 ranked 560th in the world and in the top released by the Times Higher Education for 2015-2016, Babeș-Bolyai University was the single university in Romania 		 placed in the 501-600 category. 
+	</p>
+    </div>
+      
+</div>
+   </div>
+   
+<div class="divider3"><p class="quotes">The measure of intelligence is the ability to change. (Albert Einstein)</p></div>
+</div>
+
+
+<!--Soft Skills-->
+<div class="container skills" id="soft-skills">
+<h1><i class="fa fa-cogs"></i> Soft skills</h1><br>
+
+<div class="col-md-12">
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-btn">
+<i class="fa fa-5x fa-superpowers"></i><br>
+<h4>Strong work ethic</h4></button>
+</div>
+<div class="dummy col-md-12"></div>
+
+<div class="col-md-4">
+<button onclick="document.getElementById('id02').style.display='block'" class="w3-btn">
+<i class="fa fa-5x fa-refresh"></i><br>
+<h4>Flexibility </h4></button>
+</div>
+
+<div class="col-md-4">
+<button onclick="document.getElementById('id03').style.display='block'" class="w3-btn">
+<i class="fa fa-5x fa-question"></i><br>
+<h4>Critical thinking</h4></button>
+</div>
+
+<div class="col-md-4">
+<button onclick="document.getElementById('id04').style.display='block'" class="w3-btn">
+<i class="fa fa-5x fa-cog"></i><br>
+<h4>Responsibility</h4></button>
+</div><br>
+<div class="dummy col-md-12"></div>
+<div class="col-md-12">
+<button onclick="document.getElementById('id05').style.display='block'" class="w3-btn">
+<i class="fa fa-5x fa-american-sign-language-interpreting" "></i><br>
+<h4>Good communication/language skills</h4></button>
+</div>
+
+<!-- The Modals for soft skills -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+     <header class="w3-container ">
+      	<span onclick="document.getElementById('id01').style.display='none'"
+      	class="w3-closebtn">&times;</span>
+      	<h2>Strong work ethic</h2>
+     </header>
+        <p>
+         I like to take pride in everything I do, therefore I attempt to execute all my tasks very well. It is important to me to meet deadlines and I quite enjoy 		 stretching my skills. People in my environment call me meticulous and indeed I pay attention to details and I am always willing to go the extra mile.
+	</p>
+    </div>
+  </div>
+</div>
+
+<div id="id02" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+     <header class="w3-container ">
+      	<span onclick="document.getElementById('id02').style.display='none'"
+      	class="w3-closebtn">&times;</span>
+      	<h2>Flexibility </h2>
+     </header>
+      <p>
+	I am a lifelong learner and keen to develop new skills. Coming from a different culture, with different background and dissimilar way of thinking I had to 		adjust to England’s customs and traditions. Not only the new country, new language, but my role by Jamie Oliver Ltd required adaptability and flexibility. 		Working for Jamie Oliver and his family challenged me with a wide variety of jobs (driving, maintenance, gardening, looking after children, assisting with 		cooking, shopping etc.) and I had to be available around the clock, these all helped me to become able to respond to altered circumstances. 
+      </p>
+   </div>
+  </div>
+</div>
+
+<div id="id03" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+     <header class="w3-container ">
+      	<span onclick="document.getElementById('id03').style.display='none'"
+      	class="w3-closebtn">&times;</span>
+      	<h2>Critical thinking </h2>
+     </header>
+      <p>
+	“The unexamined life is not worth living” (Socrates) is my motto, therefore I raise questions about everything I do or the problems I face. I like to analyse 		things objectively and logically, to be open minded and responsible to variable subject matters.  Figuring out solutions for complex problems and tackling 		challenges are my favourite, I like being disposed to consider in a thoughtful way the problems and subjects coming across. 
+    </p>
+    </div>
+  </div>
+</div>
+
+<div id="id04" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+     <header class="w3-container ">
+      	<span onclick="document.getElementById('id04').style.display='none'"
+      	class="w3-closebtn">&times;</span>
+      	<h2>Responsibility</h2>
+     </header>
+      <p>
+	During my carrier I always tried to carry out tasks and duties to the best of my ability and beyond. Reliability is key to me, it’s the fundamental requirement 	of my recent job. The Oliver family trusts me with their children – not only with school run and driving them around, but I took them out several times to parks, 	  playgrounds, restaurants – and their property in London, all their cars etc. I have been living with and working for the family for six and a half years and 		proved to be trustworthy, confidential and accountable. 
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="id05" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+     <header class="w3-container ">
+      	<span onclick="document.getElementById('id05').style.display='none'"
+      	class="w3-closebtn">&times;</span>
+      	<h2>Good communication/language skills</h2>
+     </header>
+      <p>
+	I am a bilingual person, Hungarian and Romanian are my first languages, I can also speak, read and write English in an advanced level. All my previous workplaces 		I had to interact with people and I managed to become friends with most of my colleagues. At Thermocontrol I was responsible for a group of 4 people and could 		establish an effective team with measurable results. By Jamie Oliver Ltd one of my duties was to mediate between Jamie Oliver and his personal team and to hand 	out jobs to my co-workers. Collaboration is my strength; I handle other people with respect and empathy, pay close attention to what they are saying. Generally I 		consider myself friendly and bubbly. 
+      </p>
+    </div>
+  </div>
+</div>
+<!--Modals for projects-->
+<!--Project1-->
+<div id="id06" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+     <header class="w3-container ">
+      	<span onclick="document.getElementById('id06').style.display='none'"
+      	class="w3-closebtn">&times;</span>
+      	<h1>Back of house management system for a restaurant</h1>
+		<h4>
+		This is desktop application for which I used JavaFx with Event handling, Thread API and
+		Stream API. It can be used as a back of house restaurant software system. It handles
+		orders, communicates between waiters and kitchen, helps with food timing and also controls the payment.
+		</h4>
+     </header>
+			<h3>Core language: Java</3>
+			<h3>IDE: IntelliJ IDEA</h3>
+			<h3>API's: Thread API, Stream API</h3>
+  			<h3><a href="img/UseCaseDiagram.png" target="_blank">Use Case Diagram</a></h3>
+  			<h3><a href="img/ClassDiagram.png" target="_blank">Class Diagram</a></h3>
+  			<h3><a href="https://github.com/dornescustefan/JavaFxProject" target="_blank"><h3>Source Code</a></h3>
+  			<h3><a href="https://youtu.be/zK7QfFt3q8A" target="_blank">Demo1</a></h3>
+  			
+	 </div>
+  </div>
+</div>
+<!--Project2-->
+<div id="id07" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+     <header class="w3-container ">
+      	<span onclick="document.getElementById('id07').style.display='none'"
+      	class="w3-closebtn">&times;</span>
+      	<h1>Fleet management system</h1>
+		<h4>This application is based on Java Spring MVC, MySQL and JDBC API. It could be used as
+		a fleet management software, which enables users to accomplish specific tasks relating to a
+		fleet of vehicles. The application has create, read, update, delete, search and filter functionalities.
+		</h4>
+     </header>
+			<h3>Core language: Java</3>
+			<h3>IDE: Spring STS</h3>
+  			<h3>API: JDBC</h3>
+			<h3>Database: MySQL</h3>
+  			<h3><a href="https://github.com/dornescustefan/SpringMVCProject" target="_blank">Source Code</a></h3>
+  			<h3><a href="https://youtu.be/r3fRiqWdMQA" target="_blank">Demo1</a></h3>
+  			<h3><a href="https://youtu.be/N8NuijQQnnk" target="_blank">Demo2</a></h3>
+			<h3><a href="https://youtu.be/ks3z2sujGSg" target="_blank">Demo3</a></h3>
+    </div>
+  </div>
+</div>
+
+<!--Project3-->
+<div id="id08" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+     <header class="w3-container ">
+      	<span onclick="document.getElementById('id08').style.display='none'"
+      	class="w3-closebtn">&times;</span>
+      	<h1>Asset and inventory management system</h1>
+		<h4>
+		To develop this system I used Java Spring MVC, MySQL and Hibernate ORM. It could be used by a
+		company to oversee and manage its employees and their assets. It has create, read, update, delete functions
+		and the MySQL database design is based on one to many relation.
+		</h4>
+     </header>
+			<h3>Core language: Java</3>
+			<h3>IDE:  Spring STS</h3>
+			<h3>ORM: Hibernate</h3>
+			<h3>Database: MySQL</h3>
+  			<h3><a href="img/EmployeeAssetsDiagram.png" target="_blank">Database Diagram</a></h3>
+  			<h3><a href="https://github.com/dornescustefan/HibernateProject" target="_blank"><h3>Source Code</a></h3>
+  	</div>
+  </div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+<!--Contact-->
+
+<div id="contact" class="contact">
+      <div class="col-md-6">
+      <img src="img/profile_photo.jpg" id="profile_photo"></br>
+      </div>
+       <div class="col-md-6">
+      <h3><i class="fa fa-address-card"></i> Stefan Dornescu</h3>
+      <h3><i class="fa fa-mobile-phone"></i> 07842 602 514</h3>
+      <h3><i class="fa fa-envelope"></i> dornescu.stefan&#64;gmail.com </h3>
+      <h2><a href="https://github.com/dornescustefan" target="_blank" target="_blank" data-toggle="tooltip" data-placement="bottom" title="My gitHub Profile"><i     		class="fa fa-github"></i></a> 
+      <a href="http://stackoverflow.com/users/7281117/dornescu-victor-stefan" target="_blank" data-toggle="tooltip" data-placement="bottom" title="My Stack Overflow Profile"><i class="fa fa-stack-overflow"></i></a>
+</h2>
+<h3 id="cv_link"><a href="CV.pdf" target="_blank" style="color: black" >Click here for my CV</a></h3>
+      </div>
+
+</div>
+
+
+
+
+
+</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52746391-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
