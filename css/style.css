@@ -14,6 +14,7 @@ body {
 h1, h2, h3, h4, h5, h6{
  font-family: 'Lekton', sans-serif;
 }
+
 .navbar {
     margin-bottom: 0;
     border: 0 !important;
@@ -125,16 +126,12 @@ color: black !important;
   border-color: #704214;
   padding-bottom: 120px;
   font-family: 'Lekton', sans-serif;
-
-
 }
 
-
 .contact {
-  text-align:;
   font-family: 'Lekton', sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: bold; 
   color: black;
    background: url("../img/contact.jpg") no-repeat center center; 
   -webkit-background-size: cover;
@@ -148,10 +145,19 @@ color: black !important;
 
 #profile_photo{
 	width: 380px; 
-	height: 253px; 
+	height: 250px; 
+	float: initial;
 	border-radius: 25px;
-        float:right;
         }
+
+#card{
+	width: 382px; 
+	border-color: #704214;
+	border-radius: 25px;
+	display: block;
+   	margin-left: auto;
+   	margin-right: auto;
+	}
 
 .logo {
 font-size: 20px;
@@ -180,7 +186,6 @@ font-size: 20px;
 }
 
 .studies {
-
 color: #704214;
 background-color: white; 
 border-radius: 25px;
@@ -249,6 +254,7 @@ height: 60px;
 }
 
 @media screen and (max-width: 640px){
+
 .dummy{
 width: 0px;
 height: 0px;
@@ -257,7 +263,6 @@ height: 0px;
 .quotes{
 padding-top: 0px; 
 font-size: 30px;
-
 }
 
 .contact{
@@ -266,13 +271,24 @@ padding-top: 20px;
 padding-bottom: 20px;
 }
 
-#profile_photo {
-    width: 280px;
-    height: 187px;
-    float: initial;
+#card{
+	width: auto;
+	height: auto;
+	border-color: #704214;
+	border-radius: 15px;
+	display: block;
+   	margin-left: auto;
+   	margin-right: auto;
+	}
+
+#profile_photo{
+  	max-width: 100%;
+	max-height: 100%;
+	border-radius: 15px;
+	}
+
 }
 
 
-}
 
 
